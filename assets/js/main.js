@@ -1,10 +1,3 @@
-/**
-* Template Name: SnapFolio
-* Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
-* Updated: Jun 13 2025 with Bootstrap v5.3.6
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";
@@ -110,22 +103,22 @@
    */
   new PureCounter();
 
-  /**
-   * Animate the skills items on reveal
-   */
-  let skillsAnimation = document.querySelectorAll('.skills-animation');
-  skillsAnimation.forEach((item) => {
-    new Waypoint({
-      element: item,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = item.querySelectorAll('.progress .progress-bar');
-        progress.forEach(el => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%';
-        });
-      }
-    });
-  });
+  // /**
+  //  * Animate the skills items on reveal
+  //  */
+  // let skillsAnimation = document.querySelectorAll('.skills-animation');
+  // skillsAnimation.forEach((item) => {
+  //   new Waypoint({
+  //     element: item,
+  //     offset: '80%',
+  //     handler: function(direction) {
+  //       let progress = item.querySelectorAll('.progress .progress-bar');
+  //       progress.forEach(el => {
+  //         el.style.width = el.getAttribute('aria-valuenow') + '%';
+  //       });
+  //     }
+  //   });
+  // });
 
   /**
    * Initiate glightbox

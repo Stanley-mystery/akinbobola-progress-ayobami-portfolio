@@ -39,6 +39,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
@@ -296,15 +297,14 @@
                     <span class="mission-text"
                       >Akinbobola Progress Ayobami</span
                     >
-                    —a creative and
-                    award-winning content creator with 3+ years of experience
-                    producing engaging, brand-aligned digital content. Named
-                    Content Creator of the Year 2024 by the Faculty of Law,
-                    University of Lagos, I specialize in content planning,
-                    social media strategy, and visual storytelling. I've led
-                    creative teams and executed high-impact campaigns for
-                    student bodies, entrepreneurs, brands, and national legal
-                    organizations.
+                    —a creative and award-winning content creator with 3+ years
+                    of experience producing engaging, brand-aligned digital
+                    content. Named Content Creator of the Year 2024 by the
+                    Faculty of Law, University of Lagos, I specialize in content
+                    planning, social media strategy, and visual storytelling.
+                    I've led creative teams and executed high-impact campaigns
+                    for student bodies, entrepreneurs, brands, and national
+                    legal organizations.
                   </p>
 
                   <p>
@@ -757,278 +757,516 @@
       </section>
       <!-- /Resume Section -->
 
-      <!-- Portfolio Section -->
       <section id="portfolio" class="portfolio section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div
+          class="container section-title aos-init aos-animate"
+          data-aos="fade-up"
+        >
           <h2>Portfolio</h2>
           <p>
-            My portfolio showcases a diverse range of content projects crafted
-            for beauty, lifestyle, legal, and entrepreneurial brands. From
-            challenge-winning videos and branded UGC to promotional reels, event
-            campaigns, and digital storytelling, each piece reflects my creative
-            vision and strategic approach to engagement. Whether it's a viral
-            TikTok reel, a launch-day teaser, or a social media campaign for a
-            student law forum, I blend bold visuals, authentic messaging, and
-            platform-specific strategy to deliver results that resonate with
-            modern audiences.
+            A curated collection showcasing visual storytelling through
+            captivating videos and compelling photography.
           </p>
         </div>
 
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div
+          class="container aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div
             class="isotope-layout"
-            data-default-filter="*"
+            data-default-filter=".filter-video"
             data-layout="masonry"
             data-sort="original-order"
           >
             <div class="row">
-              <div class="col-lg-3 filter-sidebar" hidden>
+              <!-- Filter Tabs -->
+              <div class="col-lg-3 filter-sidebar">
                 <div
-                  class="filters-wrapper"
+                  class="filters-wrapper aos-init aos-animate"
                   data-aos="fade-right"
                   data-aos-delay="150"
                 >
                   <ul class="portfolio-filters isotope-filters">
-                    <li data-filter="*" class="filter-active">All Projects</li>
-                    <li data-filter=".filter-photography">Photography</li>
-                    <li data-filter=".filter-design">Design</li>
-                    <li data-filter=".filter-automotive">Automotive</li>
-                    <li data-filter=".filter-nature">Nature</li>
+                    <li data-filter=".filter-video" class="filter-active">
+                      Videos
+                    </li>
+                    <li data-filter=".filter-photo">Photos</li>
                   </ul>
                 </div>
               </div>
 
-              <div class="col">
+              <!-- Portfolio Items -->
+              <div class="col-lg-9">
                 <div
-                  class="row gy-4 portfolio-container isotope-container"
+                  class="row gy-4 portfolio-container isotope-container aos-init aos-animate"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  <!-- Portfolio Item 1 -->
+                  <!-- Video Items -->
                   <div
-                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography"
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video"
                   >
                     <div class="portfolio-wrap">
                       <video
                         class="img-fluid"
+                        muted
+                        preload="metadata"
                         src="assets/videos/portfolioVideo1.MP4"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                        loading="lazy"
+                        style="width: 100%; height: auto"
                       ></video>
                       <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">Dano</span>
-                          <h4>Capturing Moments</h4>
-                          <div class="portfolio-links">
-                            <a
-                              href="assets/videos/portfolioVideo1.MP4"
-                              class="glightbox"
-                              title="Capturing Moments"
-                              ><i class="bi bi-plus-lg"></i
-                            ></a>
-                          </div>
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/videos/portfolioVideo1.MP4"
+                            class="glightbox"
+                            data-type="video"
+                            title="Video 7"
+                          >
+                            <i class="bi bi-play-circle fs-3"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div
-                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography"
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video"
                   >
                     <div class="portfolio-wrap">
                       <video
                         class="img-fluid"
+                        muted
+                        preload="metadata"
                         src="assets/videos/portfolioVideo2.MP4"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                        loading="lazy"
+                        style="width: 100%; height: auto"
                       ></video>
                       <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">Maltina</span>
-                          <h4>Drama, Fashion & Spirit</h4>
-                          <div class="portfolio-links">
-                            <a
-                              href="assets/videos/portfolioVideo2.MP4"
-                              class="glightbox"
-                              title="Capturing Moments"
-                              ><i class="bi bi-plus-lg"></i
-                            ></a>
-                          </div>
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/videos/portfolioVideo2.MP4"
+                            class="glightbox"
+                            data-type="video"
+                            title="Video 7"
+                          >
+                            <i class="bi bi-play-circle fs-3"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Portfolio Item 2 -->
+
                   <div
-                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design"
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video"
                   >
                     <div class="portfolio-wrap">
                       <video
                         class="img-fluid"
+                        muted
+                        preload="metadata"
                         src="assets/videos/portfolioVideo3.MP4"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                        loading="lazy"
+                        style="width: 100%; height: auto"
                       ></video>
                       <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">Content Skill Academy</span>
-                          <h4>Creative Video Production</h4>
-                          <div class="portfolio-links">
-                            <a
-                              href="assets/videos/portfolioVideo3.MP4"
-                              class="glightbox"
-                              title="Woodcraft Design"
-                              ><i class="bi bi-plus-lg"></i
-                            ></a>
-                          </div>
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/videos/portfolioVideo3.MP4"
+                            class="glightbox"
+                            data-type="video"
+                            title="Video 7"
+                          >
+                            <i class="bi bi-play-circle fs-3"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <!-- Portfolio Item 3 -->
                   <div
-                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-automotive"
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video"
                   >
                     <div class="portfolio-wrap">
                       <video
                         class="img-fluid"
+                        muted
+                        preload="metadata"
                         src="assets/videos/portfolioVideo8.MP4"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                        loading="lazy"
+                        style="width: 100%; height: auto"
                       ></video>
                       <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">Pmg_hub</span>
-                          <h4>Cinematic Content Creation</h4>
-                          <div class="portfolio-links">
-                            <a
-                              href="assets/videos/portfolioVideo8.MP4"
-                              class="glightbox"
-                              title="Classic Beauty"
-                              ><i class="bi bi-plus-lg"></i
-                            ></a>
-                          </div>
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/videos/portfolioVideo8.MP4"
+                            class="glightbox"
+                            data-type="video"
+                            title="Video 7"
+                          >
+                            <i class="bi bi-play-circle fs-3"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <!-- Portfolio Item 4 -->
-
-                  <!-- Portfolio Item 5 -->
                   <div
-                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography"
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video"
                   >
                     <div class="portfolio-wrap">
                       <video
                         class="img-fluid"
+                        muted
+                        preload="metadata"
                         src="assets/videos/portfolioVideo5.MP4"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                        loading="lazy"
+                        style="width: 100%; height: auto"
                       ></video>
                       <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">Ecobank Business</span>
-                          <h4>dramatic Content</h4>
-                          <div class="portfolio-links">
-                            <a
-                              href="assets/videos/portfolioVideo5.MP4"
-                              class="glightbox"
-                              title="Urban Stories"
-                              ><i class="bi bi-plus-lg"></i
-                            ></a>
-                          </div>
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/videos/portfolioVideo5.MP4"
+                            class="glightbox"
+                            data-type="video"
+                            title="Video 7"
+                          >
+                            <i class="bi bi-play-circle fs-3"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <!-- Portfolio Item 6 -->
                   <div
-                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design"
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video"
                   >
                     <div class="portfolio-wrap">
                       <video
                         class="img-fluid"
+                        muted
+                        preload="metadata"
                         src="assets/videos/portfolioVideo6.MP4"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                        loading="lazy"
+                        style="width: 100%; height: auto"
                       ></video>
                       <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">Capri-sun</span>
-                          <h4>Digital Experience</h4>
-                          <div class="portfolio-links">
-                            <a
-                              href="assets/videos/portfolioVideo6.MP4"
-                              class="glightbox"
-                              title="Digital Experience"
-                              ><i class="bi bi-plus-lg"></i
-                            ></a>
-                          </div>
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/videos/portfolioVideo6.MP4"
+                            class="glightbox"
+                            data-type="video"
+                            title="Video 7"
+                          >
+                            <i class="bi bi-play-circle fs-3"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div
-                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-nature"
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video"
                   >
                     <div class="portfolio-wrap">
                       <video
                         class="img-fluid"
-                        src="assets/videos/portfolioVideo7.MP4"
-                        autoplay
-                        loop
                         muted
-                        playsinline
-                        loading="lazy"
+                        preload="metadata"
+                        src="assets/videos/portfolioVideo7.MP4"
+                        style="width: 100%; height: auto"
                       ></video>
                       <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">Goodwall</span>
-                          <h4>challenge introduction on Goodwall App</h4>
-                          <div class="portfolio-links">
-                            <a
-                              href="assets/videos/portfolioVideo7.MP4"
-                              class="glightbox"
-                              title="Natural Growth"
-                              ><i class="bi bi-plus-lg"></i
-                            ></a>
-                          </div>
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/videos/portfolioVideo7.MP4"
+                            class="glightbox"
+                            data-type="video"
+                            title="Video 7"
+                          >
+                            <i class="bi bi-play-circle fs-3"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- End Portfolio Items -->
+
+                  <!-- Photo Items -->
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage1.webp"
+                        class="img-fluid"
+                        alt="Photo 1"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage1.webp"
+                            class="glightbox"
+                            title="Photo 1"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Repeat photo items up to 7 -->
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage2.webp"
+                        class="img-fluid"
+                        alt="Photo 2"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage2.webp"
+                            class="glightbox"
+                            title="Photo 2"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage3.webp"
+                        class="img-fluid"
+                        alt="Photo 3"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage3.webp"
+                            class="glightbox"
+                            title="Photo 3"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage4.webp"
+                        class="img-fluid"
+                        alt="Photo 4"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage4.webp"
+                            class="glightbox"
+                            title="Photo 4"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage5.webp"
+                        class="img-fluid"
+                        alt="Photo 5"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage5.webp"
+                            class="glightbox"
+                            title="Photo 5"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage6.webp"
+                        class="img-fluid"
+                        alt="Photo 6"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage6.webp"
+                            class="glightbox"
+                            title="Photo 6"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage7.webp"
+                        class="img-fluid"
+                        alt="Photo 7"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage7.webp"
+                            class="glightbox"
+                            title="Photo 7"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage8.webp"
+                        class="img-fluid"
+                        alt="Photo 7"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage8.webp"
+                            class="glightbox"
+                            title="Photo 7"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage9.webp"
+                        class="img-fluid"
+                        alt="Photo 7"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage9.webp"
+                            class="glightbox"
+                            title="Photo 7"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage10.webp"
+                        class="img-fluid"
+                        alt="Photo 7"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage10.webp"
+                            class="glightbox"
+                            title="Photo 7"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage11.webp"
+                        class="img-fluid"
+                        alt="Photo 7"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage11.webp"
+                            class="glightbox"
+                            title="Photo 7"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photo"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/portfolioImage12.webp"
+                        class="img-fluid"
+                        alt="Photo 7"
+                      />
+                      <div class="portfolio-info">
+                        <div class="portfolio-links">
+                          <a
+                            href="assets/img/portfolio/portfolioImage12.webp"
+                            class="glightbox"
+                            title="Photo 7"
+                            ><i class="bi bi-plus-lg"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <!-- End row -->
               </div>
+              <!-- End col-lg-9 -->
             </div>
+            <!-- End row -->
           </div>
+          <!-- End isotope-layout -->
         </div>
+        <!-- End container -->
       </section>
+
+      <!-- Portfolio Section -->
+
       <!-- /Portfolio Section -->
 
       <!-- Services Section -->
@@ -1499,11 +1737,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <script>
       AOS.init();
     </script>
     <!-- pure counter JS File -->
     <script src="assets/vendor/js/purecounter.js"></script>
+    <!-- Load Waypoints library first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
+    <!-- Your script -->
+    <script>
+      let skillsAnimation = document.querySelectorAll(".skills-animation");
+      skillsAnimation.forEach((item) => {
+        new Waypoint({
+          element: item,
+          offset: "80%",
+          handler: function (direction) {
+            let progress = item.querySelectorAll(".progress .progress-bar");
+            progress.forEach((el) => {
+              el.style.width = el.getAttribute("aria-valuenow") + "%";
+            });
+          },
+        });
+      });
+    </script>
+
+    <!-- imagesLoaded library -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Isotope (if you're using it) -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
 
